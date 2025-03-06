@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Registration</title>
+    <style>
+        #body{
+            text-align:center;
+            color:rgb(0, 0, 0);
+            border-radius: 10px;
+            animation:indiani 1s linear 0s 1 normal;
+            font-weight: 900;
+        }
+        @keyframes indiani{
+            from{
+                height: 0px;
+                width:0px;
+            }
+            to{
+                height:820px;
+                width:40%;
+            }
+        }
+        #all{
+            width:100vw;
+            height:1100px;
+            background-image: url("mn-donor.jpg");
+            background-size:cover;
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+        }
+        #heading{
+            font-size: 20px;
+            color:black;
+            font-weight: 900;
+            
+        }
+        .element{
+           /* background-color: rgba(255,0,0,0.1);*/
+            width:40%;
+            
+        }
+        #state_name{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="body" class="element">
+            <p id="heading" >Individual Registration</p>
+            First Name<br>
+            <input type="text" placeholder="enter first name" id="first"><br><br>
+            Last Name<br>
+            <input type="text" placeholder="enter last name" id="last"><br><br>
+            Country<br>
+            <input type="text" placeholder="enter country" id="country"><br><br>
+            State<br>
+            <select name="state" id="state_name">
+                </select><br><br>
+            Address<br>
+            <input type="string" placeholder="enter address" id="address">
+            <br><br>
+            Select Date of Birth<br>
+            <input type="date" id="date">
+            <p id="age_tag">Age<br>
+            <input type="number" placeholder="age" id="age"></p>
+            <p id="gen">Gender<br>
+            <select name="gender" id="gender" class="gen">
+                <option value="Male" id="male">Male</option>
+                <option value="Female" id="female">Female</option>
+                <option value="Transgender" id="trans">Transgender</option>
+            </select><br><br>
+            Blood Group<br>
+            <select name="BloodGroup" id="bg" class="gen">
+                <option value="O+">O+</option>
+                <option value="A+">A+</option>
+                <option value="B+">B+</option>
+                <option value="AB+">AB+</option>
+                <option value="O-">O-</option>
+                <option value="A-">A-</option>
+                <option value="B-">B-</option>
+                <option value="AB-">AB-</option>
+            </select><br><br>
+            Contact Number<br>
+            <input type="number" placeholder="enter contact no." id="contact" class="gen"><br><br>
+            Email Address<br>
+            <input type="gmail" placeholder="enter email address" id="email" class="gen"><br><br>
+            Select type of identity<br>
+            <select name="card" id="card" class="gen">
+                <option value="aadhar">aadhar Card</option>
+                <option value="voter">Voter Card</option>
+                <option value="pan">Pan Card</option>
+                <option value="driving">Driving License</option>
+            </select><br><br>
+            Identity Card Number<br>
+            <input type="string" placeholder="enter identity card no." id="cn" class="gen"><br><br>
+            Password<br>
+            <input type="password" placeholder="give strong password" id="pwd" class="gen"><br><br>
+            <label for="varify" class="gen">
+                <input type="radio" placeholder="" id="varify" class="gen">The informations given above are true.</label><br><br>
+            <input type="submit" id="submit" class="gen"><br><br>
+            <p class="gen" >Do you have account?<a href="individual_login.html" style="color:rgba(124, 9, 9, 0.8);" target="__main__">Login</a></p></p>
+        </div>
+        
+    </div>
+    
+    <script src="countryname.js"></script>
+    <script src="individual.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institution Registration</title>
+    <style>
+        body{
+            background-image: url("2171-blood-donation.jpg");
+            background-size: cover;
+        }
+        #heading{
+            text-align: center;
+            font-size: 60px;
+            color:white;
+        }
+        #body{
+            text-align:center;
+            color:rgb(16, 19, 18);
+            font-size: 1000;
+            background-color: rgba(0, 255, 255,0.4);
+            height:650px;
+            width:40%;
+            position:absolute;
+            left:400px;
+            border-radius:10px;
+            animation:othbody 2s ease-in 0s 1 reverse; 
+        }
+        @keyframes othbody{
+            from{
+                transfrom:scale(1,1);
+            }
+            to{
+                transform:scale(0.1,0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="heading">Other Institution's Registration</div>
+    <div id="body"><br>
+        Type of Institution<br>
+        <select name="type" id="type">
+            <option value="club">Club</option>
+            <option value="School">School</option>
+            <option value="College">College</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+        Name of the Institution<br>
+        <input type="text" placeholder="enter name" id="name"><br><br> Country<br>
+        <input type="text" placeholder="enter country" id="country"><br><br>
+        State<br>
+        <select name="state" id="state_name">
+            
+        </select><br><br>
+        Address<br>
+        <input type="string" placeholder="enter address" id="address"><br><br>
+        Contact Number<br>
+        <input type="number" placeholder="enter contact no." id="contact"><br><br>
+        Email Address<br>
+        <input type="gmail" placeholder="enter email address" id="gmail"><br>
+        <br>
+        Registration No.<br>
+        <input type="number" placeholder="enter registration number" id="reg"><br><br>
+            Password<br>
+            <input type="password" placeholder="give strong password" id="pwd"><br><br>
+        <label for="varify">
+            <input type="radio" placeholder="" id="varify">The informations given above are true.</label><br><br>
+        <input type="submit" id="submit">
+        <p>Do you have account?<a href="institution_login.html"  target="_main" style="color:white;">Login</a></p>
+    <div>
+    <script src="countryname.js"></script>    
+    <script src="institution.js"></script>
+
+
+</body>
+</html>

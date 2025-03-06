@@ -1,0 +1,101 @@
+body{
+    background-color:rgb(250, 250, 250);
+}
+.top{
+    display:inline-block;
+    background-color: red;
+    color:rgb(250, 247, 247);
+    padding:10px 10px 10px 10px;
+    border-radius:10px;
+}
+.top:hover{
+    font-size: 20px;
+}
+#all{
+    position:absolute;
+    top:5px;
+    right:-1px;
+    margin:10px 10px 10px 10px;
+}
+#login{
+    margin-right: 15px;
+    cursor:pointer;
+    display: inline-block;
+}
+#guide{
+    margin-right: 15px;
+    cursor:pointer;
+    display: inline-block;
+}
+#help{
+    margin-right: 15px;
+    cursor:pointer;
+    display: inline-block;
+}
+#logo{
+    background-image: url("blooddonation.jpg");
+    background-size:cover;
+    height:600px;
+    width:100vw;
+}
+.reg{
+    background-color:red;
+    color:white;
+    cursor:pointer;
+    padding:20px 20px 20px 20px;
+    width:200px;
+    border-radius:10px;
+    margin-bottom:10px;
+    animation:myanimate 3s ease-in 1s 1 normal;
+    
+}
+.reg:hover{
+    font-size:20px;
+}
+@keyframes myanimate{
+    from{
+        transform:translateX(-230px);
+    }
+    to{
+        transform:translateX(0px);
+    }
+}
+#quote{
+    color:rgb(250, 0, 0);
+    font-weight: 900px;
+    height:50px;
+    width:80%;
+    padding:20px 20px 20px 20px;
+    font-size:50px;
+    position:absolute;
+    top:250px;
+    bottom:10px;
+    animation:myquote 3s ease-in 1s 1 normal;
+}
+.element{
+    display:inline-block;
+}
+#first{
+    margin-top: 110px;
+    margin-bottom:100px;
+    animation:myanimate 2s ease-in 1s 1 normal;
+}
+#second{
+    margin-bottom:100px;
+    animation:myanimate 2s ease-in 1s 1 normal;
+}
+@keyframes myquote{
+    from{
+        transform:translateX(1100px);
+    }
+    to{
+        transform:translateX(0px);
+    }
+}
+#a{
+    color:white;
+    text-decoration: none;
+}
+#third{
+    animation:myanimate 2s ease-in 1s 1 normal;
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guideline</title>
+    <style>
+        #option{
+            height:90px;
+            width:100vw;
+           
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        /*#homepage,#reg,#log,#help{
+            width:200px;
+            height: 40px;
+            display:inline-block;
+            text-align: center;
+            border-radius: 12px;
+            padding-top:12px;
+            margin:10px 10px 10px 10px;
+            background-color: rgb(255, 0, 34);
+      
+        }*/
+        #body{
+            height:2400px;
+            width: 100vw;
+            background-color: antiquewhite;
+        }
+        
+      
+        #home_body{
+            height: 580px;
+            width:100vw;
+        }
+        #reg_body{
+            height: 600px;
+            width:100vw;
+            
+            position: absolute;
+            top:680px;
+           
+        }
+        #log_body{
+            height: 600px;
+            width:100vw;
+            position: absolute;
+            top:1290px;
+           
+        }
+        #help_body{
+            height:600px;
+            width:100vw;
+            position: absolute;
+            top:1890px;
+        }
+
+        #x{
+            text-decoration: none;
+            color:white;
+            background-color: red;
+            width:200px;
+            height: 40px;
+            display:inline-block;
+            text-align: center;
+            border-radius: 12px;
+            padding-top:12px;
+            margin:10px 10px 10px 10px;
+      
+        }
+        #home_img{
+            height:300px;
+            width:700px;
+            background-image: url("homepage.JPG");
+            background-size: cover;
+            margin:5px 5px 5px 5px;
+            position: absolute;
+            left:100px;
+            top:120px;
+        }
+        
+        #home_des{
+            background-color: rgb(255, 255, 255);
+            color:red;
+            height:250px;
+            width:250px;
+            margin:5px 5px 5px 5px;
+            position:absolute;
+            left:800px;
+            top:120px;
+            padding:30px 10px 20px 10px;
+            
+        }
+        #home_img,#home_des{
+            display: block;
+            border-radius: 10px;
+        }
+        #reg_des{
+            height:100px;
+            width:600px;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            position:absolute;
+            top:30px;
+            left: 450px;
+            text-align: center;
+            color:red;
+        }
+        #reg_img{
+            height:380px;
+            width:100%;
+            
+            position: absolute;
+            bottom:100px;
+        }
+       
+        #ind_img,#hos_img,#inst_img{
+            height:250px;
+            width:400px;
+            border-radius: 10px;
+        }
+        #ind_img{
+            background-image:url("individual.JPG") ;
+            background-size: cover;
+            position: absolute;
+            top:100px;
+            left:30px;
+        }
+        #hos_img{
+            position:absolute;
+            top:100px;
+            left:460px;
+            background-image:url("hospital_reg.JPG") ;
+            background-size: contain;
+        }
+        #inst_img{
+            background-image:url("insti_reg.JPG") ;
+            background-size:cover;
+            position:absolute;
+            top:100px;
+            left:900px;
+        }
+        #log_des{
+            height:100px;
+            width:600px;
+            border-radius: 10px;
+            position:absolute;
+            top:40px;
+            left: 450px;
+            text-align: center;
+            background-color: white;
+            color:red;
+        }
+        #log_img{
+            height:380px;
+            width:100%;
+            position: absolute;
+            bottom:1px;
+        }
+        #ind_logimg,#hos_logimg,#inst_logimg{
+            height:250px;
+            width:400px;
+            border-radius: 10px;
+        }
+        #ind_logimg{
+            background-image:url("individual_login.JPG") ;
+            background-size: cover;
+            position: absolute;
+            top:100px;
+            left:30px;
+        }
+        #hos_logimg{
+            position:absolute;
+            top:100px;
+            left:460px;
+            background-image:url("hospital_login.JPG") ;
+            background-size: cover;
+        }
+        #inst_logimg{
+            background-image:url("insti_login.JPG") ;
+            background-size:cover;
+            position:absolute;
+            top:100px;
+            left:900px;
+        }
+        #help_des{
+            background-color: rgb(255, 255, 255);
+            height:200px;
+            width:600px;
+            margin:5px 5px 5px 5px;
+            position:absolute;
+            top:30px;
+            color:red;
+            left:100px;
+            text-align: center;
+            border-radius: 10px;
+            
+        }
+        
+        
+
+        
+        #help_img{
+            height:295px;
+            width:300px;
+            background-image: url("helpline.JPG");
+            background-size: contain;
+            margin:5px 5px 5px 5px;
+            position: absolute;
+            top:30px;
+            left:700px;
+            border-radius: 10px;
+           
+        }
+        #link{
+            position:absolute;
+            bottom:1px;
+            left:13px;
+            
+        }
+        #link1{
+            position:absolute;
+            bottom:-70px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="guideline">
+        <div id="option">
+            <div id="homepage"><a href="#home_body" id="x">Home page</a></div>
+            <div id="reg"><a href="#reg_body" id="x">Registration</a></div>
+            <div id="log"><a href="#log_body" id="x">Login</a></div>
+            <div id="help"><a href="#help_body" id="x">Helpline</a></div>
+        </div>
+        <div id="body">
+            <div id="home_body">
+                <div id="home_img"></div>
+                <div id="home_des">It is the home page of the whole website that contains registration,login and other activities.Through this page users can fulfill their various requirements. </div>
+                <div id="link1"><a href="#option" style="color:red">back to home page</a></div>
+            </div>
+            <div id="reg_body">
+                <div id="reg_des">The pictures given below are registration page of individual,hospital and other institution type users.Here the user have to register according to their type by giving name,address,gmail,registration number and password etc.During registration process the user should keep in mind the password and registration or email address that is required to login future purpose.</div>
+                <div id="reg_img">
+                    <div id="ind_img"></div>
+                    <div id="hos_img"></div>
+                    <div id="inst_img"></div>
+                </div>
+                <div id="link"><a href="#option" style="color:red">back to home page</a></div>
+            </div>
+            <div id="log_body">
+                <div id="log_des">All the below pictures are showing the image of login page of individual,hospital,institution sequentially.We should log in there with the help of gmail or registration number and password which was provided during registration process.</div>
+                <div id="log_img">
+                    <div id="ind_logimg"></div>
+                    <div id="hos_logimg"></div>
+                    <div id="inst_logimg"></div>
+                </div>
+                <div id="link"><a href="#option" style="color:red">back to home page</a></div>
+            </div>
+            <div id="help_body">
+                <div id="help_des">If the user wants to know something else or face problem during using it,they should contact through the contact number and gmail address given in helpline page.Also they may leave impression by using the website.</div>
+                <div id="help_img"></div>
+                <div id="link"><a href="#option" style="color:red">back to home page</a></div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

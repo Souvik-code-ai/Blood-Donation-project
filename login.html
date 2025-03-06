@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-image:url("360_F_276718846_1mDkxI8gb6FrfuwAiPb6OuB4M7BbeuoV.jpg");
+            background-size: cover;
+
+        }
+        #heading{
+            height:30px;
+            width:240px;
+            text-align: center;
+            background-color: rgba(240, 255, 255,0.5);
+            font-size:20px;
+            padding-top: 7px;
+        }
+        #login{
+            background-color: rgba(250, 235, 215,0.2);
+            height:200px;
+            width:240px;
+            background-color: rgba(240, 255, 255,0.5);
+            text-align: left;
+            
+        }
+        #submit{
+            height:25px;
+            width:60px;
+            border-radius: 10px;
+            text-align: center;
+            padding-top:4px;
+            position:relative;
+            left:84px;
+            top:20px;
+            cursor:pointer;
+            transition:all 0.1s ease-in 0s;
+        }
+        #submit:hover{
+            background-color: red;
+        }
+        #submit:active{
+            background-color: white;
+        }
+        #all{
+            height:200px;
+            width:200px;
+           
+            position: fixed;
+            top:200px;
+            left:580px;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="heading" class="logall">Login Page</div>
+        <div id="login" class="logall">
+            <form src="">
+                <label for="id1">
+                    <input type="radio" id="id1" name="login" value="individual">Individual Login
+                </label><br>
+                <label for="id2">
+                    <input type="radio" id="id2" name="login" value="hospital">hospital/nursing home's Login
+                </label><br>
+                <label for="id3">
+                    <input type="radio" id="id3" name="login" value="other">Other Institution's Login
+                </label>
+
+            </form>
+            <div id="submit">Sudmit</div>
+        </div>
+    </div>
+</body>
+</html>

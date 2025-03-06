@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Registration</title>
+    <style>
+        body{
+            background-image: url("Blood_Donation-732X549-thumbnail-732x549.avif");
+            background-size: cover;
+        }
+        #heading{
+            text-align: center;
+         /*   background-color: rgba(255, 0, 0,0.5);*/
+            font-size: 60px;
+            height:70px;
+            width:100vw;
+            animation:hoshead 1s ease-in 0s 1 normal; 
+        }
+        @keyframes hoshead{
+            from{
+                position: absolute;
+                top:-80px;
+            }
+            to{
+                position: absolute;
+                top:8px;
+            }
+        }
+        #body{
+            text-align:center;
+            height:980px;
+            width:100vw;
+            animation:hosbody 2s ease-in 0s 1 normal;
+        }
+        @keyframes hosbody{
+            from{
+                position:absolute;
+                top:-980px;
+            }
+            to{
+                position:absolute;
+                top:50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="heading">Hospital/Nursing Home's Registration</div>
+    <div id="body"><br>
+        Hospital/Nursing Home's Name<br>
+        <input type="text" placeholder="enter name" id="hospital"><br><br> Country<br>
+        <input type="text" placeholder="enter country" id="country"><br><br>
+        State<br>
+        <select name="state" id="state_name"></select><br><br>
+        Address<br>
+        <input type="string" placeholder="enter address" id="address"><br><br>
+        Contact Number<br>
+        <input type="number" placeholder="enter contact no." id="contact"><br><br>
+        Email Address<br>
+        <input type="gmail" placeholder="enter email address" id="email"><br>
+        <br>
+        Registration No.<br>
+        <input type="number" placeholder="enter registration number" id="reg"><br><br>
+            Password<br>
+            <input type="password" placeholder="give strong password" id="pwd"><br><br>
+            <label for="varify">
+                <input type="radio" placeholder="" id="varify">The informations given above are true.</label><br><br>
+            <input type="submit" id="submit">
+            <p>Do you have account?<a href="hospital_login.html" style="color:white;" target="_main">Login</a></p>
+    <div>
+    <script src="countryname.js"></script>
+    <script src="hospital.js"></script>
+
+
+    
+</body>
+</html>

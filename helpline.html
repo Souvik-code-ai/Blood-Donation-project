@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpline</title>
+    <style>
+        body{
+            background-image:url("3af59bf49f5a0f5874511f1b5a34211c.jpg");
+        }
+        #help{
+            background-color:rgba(250, 0, 0,0.8);
+            height:600px;
+            width:600px;
+            text-align: center;
+            font-size: 30px;
+            border-radius: 20px;
+            position:fixed;
+            left:350px;
+            animation: anihelp 1s ease-in 0s 1 normal;
+        }
+        @keyframes anihelp{
+            from{
+                position: absolute;
+                left:-600px;
+            }
+            to{
+                position:absolute;
+                left:350px;
+            }
+
+        }
+        #heading{
+            font-weight:bolder;
+        }
+        #feed{
+            background-color: bisque;
+            height: 200px;
+            width:600px;
+        }
+        .ele{
+            display: inline-block;
+            margin: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="help" class="ele">
+        <p id="heading">Helpline Requirements:</p>
+        <table>
+            <tr>
+                <td >Contact Number:</td>
+                <td >+917439924851</td>
+            </tr>
+            <tr>
+                <td >Email Address:</td>
+                <td>purkaitsouvik531@gmail.com</td>
+            </tr>
+        </table>
+        <p>Rate your Experience:<br><input type="range" id="range"></p>
+        <p>Any suggestions Required
+        <textarea name="feedback" placeholder="Give any suggestions here" rows="9" cols="75" id="feedback"></textarea></p>
+        <input type="Submit" id="submit">
+        
+    </div>
+    <script src="helpline.js"></script>
+    
+</body>
+</html>
