@@ -162,7 +162,7 @@ function valid_card(cn)
             new_tag.innerHTML="<p>Invalid Card Number<p>";
             new_tag.style.color="red";
             new_tag.style.height="25px";
-            document.querySelector("#card").after(new_tag);
+            document.querySelector("#cn").after(new_tag);
         }
     }
 }
